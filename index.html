@@ -29,19 +29,29 @@
     </header>
 
     <!-- HERO -->
-    <section class="hero">
-      <div class="container">
-        <h1 class="hero-title">Смачні рецепти<br />для кожного дня</h1>
+   <section class="hero">
+  <div class="container">
+    <div class="wrap">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Смачні рецепти<br />для кожного дня
+        </h1>
+
         <p class="hero-desc">
           Понад 500 рецептів з покроковими фото та відео. Від сніданку до
           вечері.
         </p>
+
         <div class="hero-actions">
           <a href="#" class="btn btn-primary">Переглянути рецепти</a>
           <a href="#" class="btn btn-secondary">Дізнатись більше</a>
         </div>
       </div>
-    </section>
+
+      <img src="./img/pasta.avif" alt="pasta" class="hero-img" />
+    </div>
+  </div>
+</section>
 
     <!-- КАРТКИ -->
     <section class="recipes">
@@ -49,19 +59,25 @@
         <h2 class="section-title">Популярні рецепти</h2>
         <ul class="recipes-list">
           <li class="recipe-card">
-            <div class="card-img"></div>
+            <div class="card-img">
+              <img class="recipe-img" src="./img/pastacarbonara.jpeg" alt="pasta carbonara">
+            </div>
             <h3 class="card-title">Паста Карбонара</h3>
             <p class="card-desc">Класичний італійський рецепт за 20 хвилин.</p>
             <a href="#" class="card-link">Читати →</a>
           </li>
           <li class="recipe-card">
-            <div class="card-img"></div>
+            <div class="card-img">
+              <img  class="recipe-img" src="./img/salad.jpeg" alt="Greek salad">
+            </div>
             <h3 class="card-title">Грецький салат</h3>
             <p class="card-desc">Свіжий і ситний салат без теплової обробки.</p>
             <a href="#" class="card-link">Читати →</a>
           </li>
           <li class="recipe-card">
-            <div class="card-img"></div>
+            <div class="card-img">
+              <img class="recipe-img" src="./img/chocolate-fondant.jpeg" alt=" chocolate-fondant">
+            </div>
             <h3 class="card-title">Шоколадний фондан</h3>
             <p class="card-desc">
               Десерт із рідкою серединою — легко і вражаюче.
@@ -82,15 +98,25 @@
           </div>
           <form class="subscribe-form">
             <input type="email" placeholder="Твій email" class="email-input" />
-            <label class="checkbox-label">
+            <!-- <label class="checkbox-label">
               <input type="checkbox" class="checkbox-input" />
               <span class="checkbox-custom"></span>
               Погоджуюсь з умовами використання
-            </label>
+            </label> -->
+            <label class="label-checkbox" >
+        <input type="checkbox" class="checkbox">
+        Погоджуюсь з умовами використання
+    </label>
             <button type="submit" class="btn btn-primary">Підписатись</button>
           </form>
         </div>
       </div>
     </section>
+
+    <script src="./src/js/script.js" type="module">
+
+    </script>
+    
+  
   </body>
 </html>
